@@ -16,9 +16,14 @@ public class Group {
         this.arr = new Student[capacity];
     }
 
-    public void addStudent(Student student){
+    public boolean addStudent(Student student){
+if (student == null || size ==capacity)
+    return false;
+arr[size]=student;
+size++;
+return true;
+}
 
-    }
 
     public String getStudent(String firstName,String lastName){
         return null;
